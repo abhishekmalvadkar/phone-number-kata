@@ -14,4 +14,15 @@ public class PhoneListConsistencyCheckerTest {
 
         assertThat(isConsistent).isTrue();
     }
+
+    @Test
+    void should_return_true_if_given_single_phone_entry_phone_list() {
+        PhoneListConsistencyChecker phoneListConsistencyChecker = new PhoneListConsistencyChecker();
+
+        boolean isConsistent = phoneListConsistencyChecker.isConsistent("""
+                Name,Phone Number
+                XYZ,123""");
+
+        assertThat(isConsistent).isTrue();
+    }
 }
