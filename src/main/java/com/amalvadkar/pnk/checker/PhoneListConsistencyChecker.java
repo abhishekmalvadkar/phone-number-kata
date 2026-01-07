@@ -22,7 +22,7 @@ public class PhoneListConsistencyChecker {
     private boolean withAnyOtherPhoneNumberStartWith(String givenPhoneNumber) {
         return phoneNumbers.stream()
                 .filter(ignore(givenPhoneNumber))
-                .noneMatch(whereStartWith(givenPhoneNumber));
+                .anyMatch(whereStartWith(givenPhoneNumber));
     }
 
     private static Predicate<String> whereStartWith(String currentPhoneNumber) {
