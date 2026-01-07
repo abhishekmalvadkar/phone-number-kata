@@ -1,5 +1,7 @@
 # Phone Number Kata
 
+[![CI with Qodana](https://github.com/abhishekmalvadkar/phone-number-kata/actions/workflows/all-tests.yml/badge.svg?branch=master)](https://github.com/abhishekmalvadkar/phone-number-kata/actions/workflows/all-tests.yml)
+
 ## Problem Statement
 
 Given a list of phone numbers, determine whether the list is **consistent**.
